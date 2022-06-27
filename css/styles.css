@@ -263,16 +263,15 @@ body{
 }
 .hero-close-button{
     display: block;
-    position: absolute;
-    top: 8px;
-    right: 8px;
     border: none;
     background-color: transparent;
     cursor: pointer;
     padding: 0;
 }
 .button-close-icon{
-    position: relative;
+    position: absolute;
+    top: 8px;
+    right: 8px;
 }
 .modal-close-icon{
     position: absolute;
