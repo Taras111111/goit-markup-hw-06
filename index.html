@@ -63,7 +63,7 @@
           <h1 class="main-hero">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="main-button" data-modal-open>Заказать услугу</button>
         </div>
-        <div class="backdrop is-hiddenn" data-modal>
+        <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button type="button" class="hero-close-button" data-modal-close>
               <svg
@@ -134,13 +134,16 @@
                   class="modal-check visually-hidden"
                   id="privacy"
                 />
-                <label for="privacy" class="check-text">
-                  <span>
-                    <svg class="check-icon" width="16" height="15">
-                      <use href="./images/symbol-defs.svg#icon-check"></use></svg
-                  ></span>
-                  Соглашаюсь с рассылко й и принимаю <a href="">Условия договора</a></label
-                >
+                <div class="check-text">
+                  <label for="privacy" class="check-text">
+                    <span>
+                      <svg class="check-icon" width="16" height="15">
+                        <use href="./images/symbol-defs.svg#icon-check"></use></svg
+                    ></span>
+                    Соглашаюсь с рассылко й и принимаю
+                    <a href="" class="privacy-treaty">Условия договора</a></label
+                  >
+                </div>
               </div>
               <button class="hero-send" type="submit">Отправить</button>
             </form>
@@ -470,6 +473,21 @@
               ></a>
             </li>
           </ul>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe-text">Подпишитесь на рассылку</p>
+          <form class="form-subscribe">
+            <input
+              type="email"
+              name="subscribe-email"
+              class="subscribe-input"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-button" type="submit">Подписаться</button>
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-send"></use>
+            </svg>
+          </form>
         </div>
       </div>
     </footer>
